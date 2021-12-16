@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <link rel="stylesheet" href="css/style.css">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    
+    <title>ArtsOfLu</title>
+</head>
+
+<body>
+    
+    <header>       
+        <div class="menu"></div>
+        <nav>
+            <h2><a href="index.html">Arts Of Lu</a></h2>
+           <ul>
+                    <li> <a href="Index.html"> Pagina Principal</a></li>
+                    <li> <a href="Madeira.html">Madeira</a></li>                   
+                    <li><a href="feltro.html">Feltro</a></li>                  
+                    <li><a href="natal.html">Natal</a></li> 
+                    <li><a href="guirlandas.html">Guirlandas</a></li>          
+                    <li><a href="contato.html">Contato</a></li>
+                <li class="carrinho">
+                <a class="carrinho" href="carrinho.html">
+                    <ion-icon name="cart"></ion-icon> Carrinho <span> 0</span>
+                </a>
+                </li>
+            </ul>
+    </nav>
+</div>
+    </header>
+            <form action="exibir-dados.php" class="formulario" method="post"> 
+                <p> Envie uma mensagem preenchendo o formulário abaixo</p>
+                
+                <div class="field">
+                    <label for="nome">Seu Nome:</label>
+                    <input type="text" id="nome" name="nome" placeholder="Digite seu nome*" required>
+                </div>
+                
+                <div class="field">
+                    <label for="telefone">Seu Telefone:</label>
+                    <input type="text" id="telefone" name="telefone" placeholder="Digite seu Telefone">
+                </div>
+        
+                <div class="field">
+                    <label for="email">Seu E-Mail:</label>
+                    <input type="email" id="email" name="email" placeholder="Digite seu E-Mail*" required>
+                </div>        
+                <div class="field radiobox">
+                    <span>Deseja receber nossas novidades?</span>
+                    <input type="radio" name="novidades" id="sim" value="sim" checked><label for="sim">Sim</label>
+                    <input type="radio" name="novidades" id="nao" value="nao"><label for="nao">Não</label>
+                </div>
+                <div class="field">
+                    <label for="mensagem">Sua mensagem:</label>
+                    <textarea name="mensagem" id="mensagem" placeholder="Mensagem*" required></textarea>
+                </div>
+        
+                <input type="submit" name="acao" value="Enviar">
+            </form>
+        
+        
+        
+       
+
+</body>
+<script src='js/java.js'></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</html>
